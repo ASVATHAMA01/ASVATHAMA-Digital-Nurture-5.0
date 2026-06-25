@@ -1,0 +1,30 @@
+public class StudentController {
+
+	Student student;
+	StudentView view;
+
+	StudentController(Student student, StudentView view) {
+		this.student = student;
+		this.view = view;
+	}
+
+	public void setStudentName(String name) {
+		student.setName(name);
+	}
+
+	public String getStudentName() {
+		return student.getName();
+	}
+
+	public void setStudentId(String id) {
+		student.setId(id);
+	}
+
+	public void setStudentGrade(String grade) {
+		student.setGrade(grade);
+	}
+
+	public void updateView() {
+		view.displayStudentDetails(student.getName(), student.getId(), student.getGrade());
+	}
+}
