@@ -1,5 +1,0 @@
---- Both observers registered ---
-MobileApp: AAPL is now $150.0
-WebApp: AAPL is now $150.0
--- Deregister WebApp --
-MobileApp: GOOG is now $2800.0
