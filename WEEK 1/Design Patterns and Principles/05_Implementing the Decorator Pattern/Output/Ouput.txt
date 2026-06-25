@@ -1,9 +1,0 @@
--- Email only --
-Sending Email
--- Email + SMS --
-Sending Email
-Sending SMS
--- Email + SMS + Slack --
-Sending Email
-Sending SMS
-Sending Slack

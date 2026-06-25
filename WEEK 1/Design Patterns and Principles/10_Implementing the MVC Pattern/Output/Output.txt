@@ -1,8 +1,0 @@
-Student Details:
-Name: Asvathama S K
-ID: S101
-Grade: A
-Student Details:
-Name: Asvathama S K
-ID: S101
-Grade: A+

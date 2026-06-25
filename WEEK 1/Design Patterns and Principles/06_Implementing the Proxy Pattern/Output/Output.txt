@@ -1,8 +1,0 @@
---- First display (loads + displays) ---
-Loading image: photo1.jpg
-Displaying: photo1.jpg
---- Second display (cached, no load) ---
-Displaying: photo1.jpg
---- Display img2 (loads + displays) ---
-Loading image: photo2.jpg
-Displaying: photo2.jpg
