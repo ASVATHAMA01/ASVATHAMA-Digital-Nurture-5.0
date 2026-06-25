@@ -1,0 +1,2 @@
+Paid $100.0 via PayPal
+Paid $250.0 via Stripe

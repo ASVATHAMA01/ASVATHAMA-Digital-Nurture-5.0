@@ -1,0 +1,3 @@
+Computer [CPU=Intel i9, RAM=32GB, Storage=1TB SSD]
+Computer [CPU=Intel i5, RAM=8GB, Storage=null]
+Computer [CPU=Celeron, RAM=null, Storage=null]
