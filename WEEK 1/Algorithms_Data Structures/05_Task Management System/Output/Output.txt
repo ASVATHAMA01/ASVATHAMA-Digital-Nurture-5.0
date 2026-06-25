@@ -1,0 +1,8 @@
+All tasks:
+1 - Design database schema | status: Pending
+2 - Build login page | status: In Progress
+3 - Write unit tests | status: Pending
+Search result: 2 - Build login page | status: In Progress
+After deleting task 2:
+1 - Design database schema | status: Pending
+3 - Write unit tests | status: Pending
