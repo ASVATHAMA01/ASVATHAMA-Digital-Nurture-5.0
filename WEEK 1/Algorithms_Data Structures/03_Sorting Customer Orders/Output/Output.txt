@@ -1,0 +1,10 @@
+Sorted using Bubble Sort:
+4 - Karthik N | total: 450.0
+2 - Rahul Verma | total: 800.0
+1 - Asvathama S K | total: 1500.0
+3 - Priya Sharma | total: 3200.0
+Sorted using Quick Sort:
+4 - Karthik N | total: 450.0
+2 - Rahul Verma | total: 800.0
+1 - Asvathama S K | total: 1500.0
+3 - Priya Sharma | total: 3200.0
