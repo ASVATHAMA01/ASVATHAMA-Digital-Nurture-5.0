@@ -1,0 +1,3 @@
+LOG: Hello from logger1
+LOG: Hello from logger2
+PASS: Both references point to the same instance
