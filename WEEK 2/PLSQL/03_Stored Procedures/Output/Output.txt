@@ -1,0 +1,25 @@
+SQL> EXEC ProcessMonthlyInterest;
+
+interest applied to all accounts
+PL/SQL procedure successfully completed.
+-- Account 1 balance: 1300 -> 1313
+-- Account 2 balance: 1200 -> 1212
+
+SQL> EXEC UpdateEmployeeBonus('Operations', 5);
+
+bonus applied to department: Operations
+PL/SQL procedure successfully completed.
+-- Employee 1 (Alice Johnson, Operations) salary: 77000 -> 80850
+
+SQL> EXEC TransferFunds(1, 2, 500);
+
+transferred 500 from 1 to 2
+PL/SQL procedure successfully completed.
+-- Account 1 balance: 1313 -> 813
+-- Account 2 balance: 1212 -> 1712
+
+SQL> EXEC TransferFunds(1, 2, 10000);
+
+not enough balance in account 1
+PL/SQL procedure successfully completed.
+-- no balances changed
