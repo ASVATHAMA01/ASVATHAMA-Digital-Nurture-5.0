@@ -1,0 +1,31 @@
+CREATE OR REPLACE PACKAGE CustomerManagement IS
+	PROCEDURE AddCustomer(p_id NUMBER, p_name VARCHAR2, p_dob DATE, p_balance NUMBER);
+	PROCEDURE UpdateCustomerDetails(p_id NUMBER, p_name VARCHAR2);
+	FUNCTION GetCustomerBalance(p_id NUMBER) RETURN NUMBER;
+END CustomerManagement;
+/
+
+CREATE OR REPLACE PACKAGE BODY CustomerManagement IS
+
+	PROCEDURE AddCustomer(p_id NUMBER, p_name VARCHAR2, p_dob DATE, p_balance NUMBER) IS
+	BEGIN
+		INSERT INTO Customers (CustomerID, Name, DOB, Balance, LastModified)
+		VALUES (p_id, p_name, p_dob, p_balance, SYSDATE);
+		COMMIT;
+	END;
+
+	PROCEDURE UpdateCustomerDetails(p_id NUMBER, p_name VARCHAR2) IS
+	BEGIN
+		UPDATE Customers SET Name = p_name WHERE CustomerID = p_id;
+		COMMIT;
+	END;
+
+	FUNCTION GetCustomerBalance(p_id NUMBER) RETURN NUMBER IS
+		v_bal NUMBER;
+	BEGIN
+		SELECT Balance INTO v_bal FROM Customers WHERE CustomerID = p_id;
+		RETURN v_bal;
+	END;
+
+END CustomerManagement;
+/
