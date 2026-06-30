@@ -1,0 +1,40 @@
+SQL> EXEC SafeTransferFunds(1, 2, 5000);
+
+PL/SQL procedure successfully completed.
+-- (error is caught internally, logged, rolled back -- procedure itself doesn't throw)
+
+SQL> EXEC SafeTransferFunds(2, 1, 300);
+
+PL/SQL procedure successfully completed.
+-- Account 2 balance: 1500 -> 1200
+-- Account 1 balance: 1000 -> 1300
+
+SQL> EXEC UpdateSalary(99, 10);
+
+PL/SQL procedure successfully completed.
+-- error caught internally, logged
+
+SQL> EXEC UpdateSalary(1, 10);
+
+PL/SQL procedure successfully completed.
+-- Employee 1 (Alice Johnson) salary: 70000 -> 77000
+
+SQL> EXEC AddNewCustomer(1, 'Duplicate Test', SYSDATE, 500);
+
+PL/SQL procedure successfully completed.
+-- DUP_VAL_ON_INDEX caught, logged, insert blocked
+
+SQL> EXEC AddNewCustomer(4, 'New Customer', SYSDATE, 500);
+
+PL/SQL procedure successfully completed.
+-- new row inserted: CustomerID 4, 'New Customer'
+
+SQL> SELECT ProcedureName, ErrorMessage FROM ErrorLog ORDER BY LogID;
+
+PROCEDURENAME        ERRORMESSAGE
+-------------------- --------------------------------------------------
+SafeTransferFunds    ORA-20001: insufficient funds
+UpdateSalary         ORA-20002: employee id not found: 99
+AddNewCustomer       customer id already exists: 1
+
+3 rows selected.

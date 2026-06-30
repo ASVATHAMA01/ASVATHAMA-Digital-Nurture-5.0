@@ -1,0 +1,27 @@
+SQL> SELECT CalculateAge(DOB) AS age FROM Customers WHERE CustomerID = 3;
+
+       AGE
+----------
+        66
+
+SQL> SELECT CalculateMonthlyInstallment(20000, 6, 1) AS emi FROM dual;
+
+       EMI
+----------
+   1721.33
+
+SQL> DECLARE
+       v_result BOOLEAN;
+     BEGIN
+       v_result := HasSufficientBalance(1, 500);
+       ...
+     END;
+     /
+
+account 1 has enough balance for 500
+account 1 does not have enough balance for 50000
+PL/SQL procedure successfully completed.
+
+-- account 1's balance is 813 at this point, carried over from Exercise 3's
+-- test_calls.sql (1313 - 500 transferred out = 813)
+-- 813 >= 500 is true, 813 >= 50000 is false
