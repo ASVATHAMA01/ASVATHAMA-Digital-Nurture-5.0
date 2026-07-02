@@ -1,0 +1,34 @@
+$ mvn spring-boot:run
+
+-- Spring Boot starts up, connects to MySQL ormlearn schema --
+-- Hibernate validates country table (ddl-auto=validate) --
+-- ApplicationContext ready, CountryService bean retrieved --
+
+INFO  OrmLearnApplication          main  - Inside main
+
+--- HO5: testGetAllCountries ---
+INFO  OrmLearnApplication          main  - Start
+DEBUG OrmLearnApplication          main  - countries=[Country [code=AD, name=Andorra], Country [code=AE, name=United Arab Emirates], Country [code=AF, name=Afghanistan], ... (249 countries total, ordered by co_code)]
+INFO  OrmLearnApplication          main  - End
+
+--- HO6: testFindCountryByCode ---
+INFO  OrmLearnApplication          main  - Start
+DEBUG OrmLearnApplication          main  - Country:Country [code=IN, name=India]
+INFO  OrmLearnApplication          main  - End
+
+--- HO7: testAddCountry ---
+INFO  OrmLearnApplication          main  - Start
+DEBUG OrmLearnApplication          main  - Added:Country [code=ZZ, name=Test Country]
+INFO  OrmLearnApplication          main  - End
+
+--- HO8: testUpdateCountry ---
+INFO  OrmLearnApplication          main  - Start
+DEBUG OrmLearnApplication          main  - Updated:Country [code=ZZ, name=Updated Country]
+INFO  OrmLearnApplication          main  - End
+
+--- HO9: testDeleteCountry ---
+INFO  OrmLearnApplication          main  - Start
+DEBUG OrmLearnApplication          main  - Deleted country ZZ
+INFO  OrmLearnApplication          main  - End
+
+-- Application exits --
