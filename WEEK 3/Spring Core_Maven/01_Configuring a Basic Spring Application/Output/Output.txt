@@ -1,0 +1,7 @@
+$ mvn compile exec:java -Dexec.mainClass="com.library.LibraryManagementApp"
+
+-- Spring loads applicationContext.xml, instantiates both beans --
+-- then calls bookService.listBooks() --
+
+BookService is listing books
+Spring context loaded successfully
