@@ -1,0 +1,9 @@
+$ mvn compile exec:java -Dexec.mainClass="com.library.LibraryManagementApp"
+
+-- Spring loads applicationContext.xml --
+-- instantiates bookRepository bean first (no dependencies) --
+-- instantiates bookService bean, calls setBookRepository() to inject bookRepository --
+-- then calls bookService.listBooks() which delegates to bookRepository --
+
+fetching all books from the database
+Spring context loaded successfully
