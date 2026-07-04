@@ -1,0 +1,19 @@
+GET /hello
+-> Hello World!!
+
+GET /country
+-> {"code":"IN","name":"India"}
+
+GET /countries
+-> [{"code":"IN","name":"India"},{"code":"US","name":"United States"},{"code":"DE","name":"Germany"},{"code":"JP","name":"Japan"}]
+
+GET /countries/in
+-> {"code":"IN","name":"India"}
+
+GET /countries/az
+-> {"status":404,"error":"Not Found","message":"Country not found","path":"/countries/az"}
+
+--- MockMVC Tests ---
+contextLoads()           -> PASS
+testGetCountry()         -> PASS
+testGetCountryException()-> PASS
