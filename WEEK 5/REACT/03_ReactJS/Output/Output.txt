@@ -1,0 +1,7 @@
+Student Score Calculator
+
+Name: Asvathama S K
+School: SKM
+Total: 450
+Goal: 500
+Average Score: 90.00%
