@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+p {
+    font-size: 18px;
+}
