@@ -1,8 +1,0 @@
-$ mvn compile
-
-[INFO] Scanning for projects...
-[INFO] Building LibraryManagement 1.0-SNAPSHOT
-[INFO] --- maven-compiler-plugin:3.x:compile ---
-[INFO] Compiling source files to target/classes
-[INFO] BUILD SUCCESS
-[INFO] Total time: 2.5 s
