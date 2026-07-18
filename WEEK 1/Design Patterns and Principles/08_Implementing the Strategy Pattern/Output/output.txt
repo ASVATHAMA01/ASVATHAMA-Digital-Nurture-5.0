@@ -1,2 +1,0 @@
-Paid 250.0 using Credit Card 1234567890123456
-Paying 99.99 via PayPal account: user@example.com

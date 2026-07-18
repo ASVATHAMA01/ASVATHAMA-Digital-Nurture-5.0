@@ -1,3 +1,0 @@
-Linear search result: 4 - 1984 by George Orwell
-Binary search result: 1 - Clean Code by Robert Martin
-Binary search result: null
