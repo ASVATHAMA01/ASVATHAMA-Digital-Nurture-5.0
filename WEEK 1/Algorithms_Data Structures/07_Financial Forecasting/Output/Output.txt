@@ -1,0 +1,4 @@
+Present value: 100000.0
+Growth rate: 0.08
+Years: 5
+Future value: 146932.80768000006
