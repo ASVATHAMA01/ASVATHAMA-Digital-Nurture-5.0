@@ -1,7 +1,0 @@
-Initial Inventory:
-101 - Laptop | qty: 10 | price: 55000.0
-102 - Mouse | qty: 50 | price: 450.0
-103 - Keyboard | qty: 30 | price: 800.0
-Updated Inventory:
-101 - Laptop | qty: 10 | price: 55000.0
-102 - Mouse | qty: 75 | price: 420.0

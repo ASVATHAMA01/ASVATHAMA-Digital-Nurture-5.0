@@ -1,3 +1,0 @@
-Linear search result: 104 - Notebook (Stationery)
-Binary search result: 104 - Notebook (Stationery)
-Binary search result: null
